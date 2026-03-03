@@ -1,0 +1,2 @@
+# punkteFP
+Punktewertung Fitnesspoint Cham
