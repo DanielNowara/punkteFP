@@ -105,7 +105,7 @@ PUNKTE_SYSTEM = config["punkte_system"]
 st.title("🏆 Punktestatistik FP Cham")
 # Logo anzeigen (Passe den Dateinamen an, falls dein Logo anders heißt)
 try:
-    st.image("logo.png", width=200)
+    st.image("Logo.png", width=200)
 except:
     pass # Falls das Logo nicht gefunden wird, läuft das Programm trotzdem weiter
 
@@ -281,3 +281,4 @@ with tab3:
                         st.warning("Kategorie gelöscht!")
 
                         st.rerun()
+
