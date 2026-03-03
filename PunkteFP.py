@@ -103,6 +103,11 @@ PUNKTE_SYSTEM = config["punkte_system"]
 # 3. BENUTZEROBERFLÄCHE (UI)
 # ==========================================
 st.title("🏆 Punktestatistik FP Cham")
+# Logo anzeigen (Passe den Dateinamen an, falls dein Logo anders heißt)
+try:
+    st.image("logo.png", width=200)
+except:
+    pass # Falls das Logo nicht gefunden wird, läuft das Programm trotzdem weiter
 
 tab1, tab2, tab3 = st.tabs(["📝 Tägliche Dateneingabe", "📊 Coole Statistiken", "⚙️ Admin-Bereich"])
 
@@ -274,4 +279,5 @@ with tab3:
                         del config["punkte_system"][cat_to_edit]
                         save_config(config)
                         st.warning("Kategorie gelöscht!")
+
                         st.rerun()
